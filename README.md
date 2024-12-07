@@ -19,9 +19,7 @@ npm install prompts-js
 ```
 Or use it from a CDN:
 ```html
-<script
-  src="https://cdn.jsdelivr.net/npm/prompts-js@0.0.3/index.min.js"
-></script>
+<script src="https://cdn.jsdelivr.net/npm/prompts-js"></script>
 ```
 
 ## Usage

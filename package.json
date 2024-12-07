@@ -9,6 +9,10 @@
   },
   "author": "Simon Willison",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonw/prompts-js.git"
+  },
   "keywords": [
     "alert",
     "prompt",

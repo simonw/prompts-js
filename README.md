@@ -1,7 +1,7 @@
 #  Prompts
 
 [![npm version](https://badge.fury.io/js/prompts-js.svg)](https://badge.fury.io/js/prompts-js)
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: Apache2](https://img.shields.io/badge/License-Apache2-blue.svg)](https://opensource.org/license/apache-2-0)
 
 A lightweight, dependency-free JavaScript library for creating accessible modal alert, confirm, and prompt dialogs. This library implements an async promise-based approach as an alternative to the browser built-in `alert()`, `confirm()`, and `prompt()` functions.
 

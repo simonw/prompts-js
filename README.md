@@ -17,16 +17,16 @@ A lightweight, dependency-free JavaScript library for creating accessible modal 
 ```bash
 npm install prompts-js
 ```
+Or use it from a CDN:
+```html
+<script
+  src="https://cdn.jsdelivr.net/npm/prompts-js@0.0.2/index.min.js"
+></script>
+```
 
 ## Usage
 
 ```javascript
-// Import the library (if using ES Modules)
-// import Prompts from 'prompts-js';
-
-// Or, include the script directly in your HTML and access it globally:
-// <script src="prompts-js.js"></script>
-
 // Alert
 await Prompts.alert("This is an alert message!");
 console.log("Alert closed");

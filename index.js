@@ -154,6 +154,13 @@ const Prompts = (function () {
       buttonRow.appendChild(okBtn);
       form.appendChild(buttonRow);
 
+      // Handle form submission
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        dialog.returnValue = "ok";
+        dialog.close();
+      });
+
       dialog.addEventListener("close", () => {
         const val = dialog.returnValue === "ok" ? input.value : null;
         resolve(val);

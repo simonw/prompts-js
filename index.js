@@ -44,7 +44,7 @@ const Prompts = (function () {
     width: "100%",
     boxSizing: "border-box",
     padding: "8px",
-    fontSize: "14px",
+    fontSize: "16px",
     marginBottom: "20px",
     borderRadius: "4px",
     border: "1px solid #ccc",

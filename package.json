@@ -1,6 +1,6 @@
 {
   "name": "prompts-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "async alternatives to browser alert() and prompt() and confirm()",
   "main": "index.js",
   "homepage": "https://github.com/simonw/prompts-js",

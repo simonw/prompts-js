@@ -73,11 +73,11 @@ const Prompts = (function () {
     return { dialog, form };
   }
 
-  function createButton(label, value, customStyles = {}) {
+  function createButton(label, value, customStyles = {}, type = "submit") {
     const btn = document.createElement("button");
     applyStyles(btn, buttonStyle);
     applyStyles(btn, customStyles);
-    btn.type = "submit";
+    btn.type = type;
     btn.value = value; // form submission will set dialog.returnValue to this
     btn.textContent = label;
     return btn;
@@ -147,20 +147,16 @@ const Prompts = (function () {
       const buttonRow = document.createElement("div");
       applyStyles(buttonRow, buttonRowStyle);
 
-      const cancelBtn = createButton("Cancel", "cancel", cancelButtonStyle);
+      const cancelBtn = createButton("Cancel", "cancel", cancelButtonStyle, "button");
       const okBtn = createButton("OK", "ok");
 
       buttonRow.appendChild(cancelBtn);
       buttonRow.appendChild(okBtn);
       form.appendChild(buttonRow);
 
-      // Handle form submission
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        dialog.returnValue = "ok";
-        dialog.close();
+      cancelBtn.addEventListener("click", () => {
+        dialog.close(null);
       });
-
       dialog.addEventListener("close", () => {
         const val = dialog.returnValue === "ok" ? input.value : null;
         resolve(val);
